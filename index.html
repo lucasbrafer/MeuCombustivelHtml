@@ -63,12 +63,25 @@
       <div class="hold-form">
         <div class="customInput">
           <span class="subtitle">Gasolina</span>
-          <input type="text" />
+          <input
+            id="gas"
+            value="R$ 0,00"
+            maxlength="8"
+            onkeyup="numberToReal('gas')"
+          />
         </div>
         <div class="customInput">
           <span class="subtitle">Álcool</span>
-          <input type="text" />
+          <input
+            id="alcool"
+            value="R$ 0,00"
+            maxlength="8"
+            onkeyup="numberToReal('alcool')"
+          />
         </div>
+      </div>
+      <div class="container-center pd4">
+        <button type="button" class="button w-60 center">Calcular</button>
       </div>
     </section>
   </body>
@@ -78,10 +91,10 @@
         <span class="nav__text">Dashboard</span>
       </a>
       <a href="#" class="nav__link nav__link--active">
-        <span class="nav__text">Profile</span>
+        <span class="nav__text">Calculadora</span>
       </a>
       <a href="#" class="nav__link">
-        <span class="nav__text">Devices</span>
+        <span class="nav__text">Histórico</span>
       </a>
     </nav>
   </footer>

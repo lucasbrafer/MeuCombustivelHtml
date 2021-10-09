@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Tô Ferrado</title>
+    <title>Meu Combustível</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./assets/appicons/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- Manifest -->
     <link
       rel="manifest"
       href="./manifest.webmanifest"
       crossorigin="use-credentials"
     />
-    <link rel="icon" type="image/png" href="./assets/appicons/favicon.ico" />
+
+    <!-- meta -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="Tô Ferrado" />
+
+    <!-- Icons -->
     <link
       rel="apple-touch-icon"
       sizes="72x72"
@@ -38,85 +47,42 @@
       sizes="180x180"
       href="./assets/appicons/apple-icon-180x180.png"
     />
-    <link rel="stylesheet" href="./tesi.css" />
-    <link rel="stylesheet" href="./meucombustivel.css" />
-    <script src="./tesi.js"></script>
-    <script src="./meucombustivel.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/tabnavigation.css" />
+    <link rel="stylesheet" href="./css/gas.css" />
+
+    <!-- Scrips -->
+    <script src="./js/base.js"></script>
+    <script src="./js/meucombustivel.js"></script>
   </head>
   <body>
     <section id="priceScreen" class="component">
-      <img src="./assets/gasstation.png" class="gasstation" />
+      <img src="./assets/gas.png" class="gas" />
       <div class="hold-form">
         <div class="customInput">
+          <span class="subtitle">Gasolina</span>
           <input type="text" />
         </div>
         <div class="customInput">
+          <span class="subtitle">Álcool</span>
           <input type="text" />
         </div>
-      </div>
-    </section>
-
-    <div id="tela2" class="component hidden">
-      <div class="componentHeader">
-        <h1 class="componentTitle">Nova tarefa</h1>
-      </div>
-      <div class="componentContent">
-        <div class="field">
-          <label for="inputNovaTarefa">Tarefa:</label>
-          <input id="inputNovaTarefa" type="text" autocomplete="off" />
-        </div>
-        <div class="buttonGroup mt1 end">
-          <button id="btnCanc1" class="button quarter light">Cancelar</button>
-          <button id="btnInc" class="button quarter primary" disabled>
-            Incluir
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div id="tela3" class="component hidden">
-      <div class="componentHeader">
-        <h1 class="componentTitle">Alteração de tarefa</h1>
-      </div>
-      <div class="componentContent">
-        <div class="field">
-          <label for="inputAlteraTarefa">Tarefa:</label>
-          <input id="inputAlteraTarefa" type="text" autocomplete="off" />
-        </div>
-        <div class="buttonGroup end mt1">
-          <button id="btnCanc2" class="button quarter light">Cancelar</button>
-          <button id="btnAlt" class="button quarter primary">Alterar</button>
-        </div>
-        <div class="buttonGroup end mt3">
-          <button id="btnDel" class="button quarter danger">
-            Apagar tarefa
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div id="tela4" class="component hidden">
-      <div class="componentHeader">
-        <h1 class="componentTitle">QR-Code</h1>
-      </div>
-      <div class="componentContent">
-        <div id="qrcode">
-          <p>
-            <img src="./assets/qrcode.png" />
-          </p>
-          <p class="mt2">
-            <button id="btnFechaQRCode" class="button secondary">Fechar</button>
-          </p>
-        </div>
-      </div>
-    </div>
-    <section id="footerNav">
-      <div class="TabNavigation">
-        <span> Dados </span>
-        <span> Preço </span>
-        <span> Histórico </span>
       </div>
     </section>
   </body>
-  <footer></footer>
+  <footer>
+    <nav class="nav">
+      <a href="#" class="nav__link">
+        <span class="nav__text">Dashboard</span>
+      </a>
+      <a href="#" class="nav__link nav__link--active">
+        <span class="nav__text">Profile</span>
+      </a>
+      <a href="#" class="nav__link">
+        <span class="nav__text">Devices</span>
+      </a>
+    </nav>
+  </footer>
 </html>

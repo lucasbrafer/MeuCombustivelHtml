@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+html,
+body {
+  background-color: #8b51f5;
+  height: 100vh;
+  width: 100vw;
+}
+
+footer {
+  background-color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+.customInput input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 6vw;
+  font-weight: bold;
+}
+
+.customInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem 0 1rem;
+}
+
+.customInput input {
+  border: 0;
+  text-align: center;
+  border-bottom: 3px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 10vw;
+  width: 35vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+/* cores */
+.active {
+  color: #fff;
+  background: #9055ff;
+  border: thin solid #8b51f5;
+}
+.active:active {
+  background: #8b51f5;
+  border: thin solid #5e38a5;
+}
+.primary {
+  color: #fff;
+  background: #8b51f5;
+}
+.primary:active {
+  background: #8b51f5;
+}
+.secondary {
+  color: #000;
+  background: #cddfeb;
+  border: thin solid #bcceda;
+}
+.secondary:active {
+  background: #abbdc9;
+  border: thin solid #9aacb8;
+}
+.success {
+  color: #fff;
+  background: #2a9d8f;
+  border: thin solid #198c7e;
+}
+.success:active {
+  background: #087b6d;
+  border: thin solid #006a5c;
+}
+.warning {
+  color: #000;
+  background: #ffd166;
+  border: thin solid #eec055;
+}
+.warning:active {
+  background: #ddb044;
+  border: thin solid #cca033;
+}
+.danger {
+  color: #fff;
+  background: #ef233c;
+  border: thin solid #de122b;
+}
+.danger:active {
+  background: #cd011a;
+  border: thin solid #bc0009;
+}
+.light {
+  color: #000;
+  background: #edf6f9;
+  border: thin solid #dce5e8;
+}
+.light:active {
+  background: #cbd4d7;
+  border: thin solid #bac3c6;
+}
+.dark {
+  color: #fff;
+  background: #1d3a4e;
+  border: thin solid #0c293d;
+}
+.dark:active {
+  background: #00182c;
+  border: thin solid #00071b;
+}
+
+/* espaçamentos */
+.mt1 {
+  margin-top: 1rem;
+}
+.mt2 {
+  margin-top: 2rem;
+}
+.mt3 {
+  margin-top: 3rem;
+}
+.mt4 {
+  margin-top: 4rem;
+}

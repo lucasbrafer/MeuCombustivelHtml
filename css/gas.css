@@ -1,0 +1,22 @@
+#priceScreen {
+  padding-top: 10vh;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+#priceScreen .hold-form {
+  padding-top: 5vh;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#priceScreen .hold-form > div {
+  margin-top: 3vh;
+}
+
+#priceScreen .gas {
+  height: auto;
+  width: 60vw;
+  margin: 0 auto 0 auto;
+}

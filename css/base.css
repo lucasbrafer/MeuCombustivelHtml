@@ -55,7 +55,7 @@ input::-webkit-inner-spin-button {
 
 .button {
   font-size: 6vw;
-  padding: 15px;
+  padding: 4vw;
   width: 100%;
   background-color: #5bc0de;
   color: #ffffff;
@@ -208,4 +208,16 @@ input::-webkit-inner-spin-button {
 }
 .pd4 {
   padding-top: 4vh;
+}
+.pd5 {
+  padding-top: 5vh;
+}
+.pd6 {
+  padding-top: 6vh;
+}
+.pd7 {
+  padding-top: 7vh;
+}
+.pd8 {
+  padding-top: 8vh;
 }

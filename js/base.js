@@ -23,14 +23,6 @@ onload = () => {
   mostra();
 };
 
-function formatCurrency(val, name) {
-  let numVal = Number(val)
-  if(val && !Number.isNaN(val)) {
-    let result = numVal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    document.getElementById(name).value = result
-  }
-}
-
 function numberToReal(name) {
   var elemento = document.getElementById(name);
   var valor = (elemento.value).split(' ')[1];

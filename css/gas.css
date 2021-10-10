@@ -6,7 +6,6 @@
 }
 
 #priceScreen .hold-form {
-  padding-top: 3vh;
   display: grid;
   grid-template-columns: auto auto;
 }

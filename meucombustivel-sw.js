@@ -1,4 +1,4 @@
-var cacheName = 'toferrado-v1.0';
+var cacheName = 'meucombustivel-v1.0';
 
 self.addEventListener('install', function (event) {
   caches.open(cacheName).then((cache) => {

@@ -27,6 +27,12 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+.title {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
 .subtitle {
   color: #ffffff;
   font-size: 6vw;
@@ -51,6 +57,10 @@ input::-webkit-inner-spin-button {
   width: 40vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+
+.customInput .large {
+  width: 70vw;
 }
 
 .button {

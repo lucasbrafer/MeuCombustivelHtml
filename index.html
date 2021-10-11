@@ -62,7 +62,8 @@
     <script src="./js/tabnavigation.js"></script>
   </head>
   <body>
-    <section id="priceScreen" class="component">
+    <!-- Price Screen -->
+    <section id="page-gas" class="component">
       <img src="./assets/gas.png" class="gas" />
       <div class="hold-form pd4">
         <div class="customInput">
@@ -88,17 +89,32 @@
         <button type="button" class="button w-60 center">Calcular</button>
       </div>
     </section>
+
+    <!-- Result Screen -->
+    <section id="page-result" class="component hidden">
+      <h1>Pagina de Resultado</h1>
+    </section>
+
+    <!-- Dashboard page -->
+    <section id="page-dashboard" class="component hidden">
+      <h1>Pagina de Dashboard</h1>
+    </section>
+
+    <!-- History page -->
+    <section id="page-history" class="component hidden">
+      <h1>Pagina de History</h1>
+    </section>
   </body>
   <footer>
     <nav class="nav">
-      <a class="nav__link">
-        <span class="nav__text">Dashboard</span>
+      <a id="tab-dashboard" class="nav_link" onclick="setActive('dashboard')">
+        <span>Dashboard</span>
       </a>
-      <a class="nav__link nav__link--active">
-        <span class="nav__text">Calculadora</span>
+      <a id="tab-gas" class="nav_link nav-active" onclick="setActive('gas')">
+        <span>Calculadora</span>
       </a>
-      <a class="nav__link">
-        <span class="nav__text">Histórico</span>
+      <a id="tab-history" class="nav_link" onclick="setActive('history')">
+        <span>Histórico</span>
       </a>
     </nav>
   </footer>

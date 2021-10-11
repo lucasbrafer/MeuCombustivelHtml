@@ -60,6 +60,7 @@
     <!-- Scrips -->
     <script src="./js/base.js"></script>
     <script src="./js/tabnavigation.js"></script>
+    <script src="./js/gas.js"></script>
   </head>
   <body>
     <!-- Price Screen -->
@@ -86,13 +87,48 @@
         </div>
       </div>
       <div class="container-center pd6">
-        <button type="button" class="button w-60 center">Calcular</button>
+        <button
+          type="button"
+          class="button w-60 center"
+          onclick="fetchResult()"
+        >
+          Calcular
+        </button>
       </div>
     </section>
 
     <!-- Result Screen -->
     <section id="page-result" class="component hidden">
-      <h1>Pagina de Resultado</h1>
+      <div class="arrow-container">
+        <a onclick="goBackToGas()">
+          <img src="./assets/back.svg" alt="back" />
+        </a>
+      </div>
+      <img src="./assets/crow.png" class="crow" />
+      <div class="hold-form pd4">
+        <div id="gas-result" class="hidden">
+          <span class="title">Gasolina</span>
+        </div>
+        <div id="alcool-result" class="hidden">
+          <span class="title">Álcool</span>
+        </div>
+        <div class="mt3">
+          <span class="subtitle">Nos Diga!</span>
+          <br />
+          <span class="subtitle">Quanto você abasteceu?</span>
+        </div>
+      </div>
+      <div class="customInput mt2">
+        <input
+          id="spent"
+          value="R$ 0,00"
+          maxlength="9"
+          class="large"
+          onkeyup="numberToReal('spent')"
+        />
+      </div>
+
+      <button type="button" class="button center w-60 mt2">Confirmar</button>
     </section>
 
     <!-- Dashboard page -->

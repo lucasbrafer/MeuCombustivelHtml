@@ -19,3 +19,26 @@
   width: 60vw;
   margin: 0 auto 0 auto;
 }
+
+#page-gas .crow {
+  height: auto;
+  width: 30vw;
+  margin: 0 auto 0 auto;
+}
+
+#page-result {
+  padding-top: 8vh;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+#page-result .text-back {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+#page-result .arrow-container {
+  padding-left: 10%;
+  text-align: left;
+}

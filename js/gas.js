@@ -1,10 +1,10 @@
-/* retornar para calcular */
+let isFirstInteration = true
 
+/* retornar para calcular */
 function goBackToGas() {
     document.getElementById('page-result').classList.add('hidden');
     document.getElementById('page-gas').classList.remove('hidden');
 }
-
 
 /* funcao central de carregar o resultado do combustivel */
 function fetchResult() {
@@ -21,8 +21,6 @@ function fetchResult() {
 /* Calcular qual combustivel através dos valores do input */
 /* Para o álcool ser mais vantajoso do que a gasolina, o preço do litro tem que custar até 70% do litro da gasolina */
 function gasWorthMore() {
-    console.log(realToNumber(document.getElementById('gas').value))
-    console.log(realToNumber(document.getElementById('alcool').value))
     if(realToNumber(document.getElementById('gas').value) * 0.7 > realToNumber(document.getElementById('alcool').value))
         return false
     return true
@@ -31,8 +29,11 @@ function gasWorthMore() {
 /* converte number para reais em string */
 function numberToReal(name) {
     let element = document.getElementById(name);
-    let val = (element.value).split(' ')[1];
-    
+
+    let val = element.value
+
+    if(Number.isNaN(element.value))
+        val = (element.value).split(' ')[1];
   
     val = val + '';
     val = parseInt(val.replace(/[\D]+/g, ''));

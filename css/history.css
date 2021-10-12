@@ -1,0 +1,37 @@
+#page-history {
+  padding-top: 6vh;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+#page-history .hold-form {
+  text-align: center;
+}
+
+#page-history .history {
+  height: auto;
+  width: 30vw;
+  margin: 0 auto 0 auto;
+}
+
+#page-history .list {
+  overflow: scroll;
+  max-width: 100%;
+  max-height: 45vh;
+  text-align: left;
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+
+#page-history .list span {
+  padding-left: 1vh;
+}
+
+#page-history .list .gas-text {
+  color: #d4b536;
+}
+
+#page-history .list .alcool-text {
+  color: #03396c;
+}

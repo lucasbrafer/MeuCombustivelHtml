@@ -1,6 +1,36 @@
 #page-dashboard {
-  padding-top: 10vh;
+  padding-top: 6vh;
   margin: 0 auto 0 auto;
   align-items: center;
   text-align: center;
+}
+
+#page-dashboard .hold-form {
+  text-align: center;
+}
+
+#page-dashboard .dashboard {
+  height: auto;
+  width: 30vw;
+  margin: 0 auto 0 auto;
+}
+
+#page-dashboard .card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#page-dashboard .card > span {
+  margin-left: 25px;
+}
+
+#page-dashboard .chip {
+  border: 2px solid #cfc8da;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+  padding: 2vh;
+  display: flex;
+  justify-content: left;
+  text-align: left;
 }

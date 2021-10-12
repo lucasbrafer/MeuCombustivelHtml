@@ -1,9 +1,21 @@
-let isFirstInteration = true
-
 /* retornar para calcular */
 function goBackToGas() {
     document.getElementById('page-result').classList.add('hidden');
     document.getElementById('page-gas').classList.remove('hidden');
+}
+
+
+function listenerChangingInput() {
+    let gasVal = document.getElementById('gas').value
+    let alcoolVal = document.getElementById('alcool').value
+
+    if(!gasVal || gasVal === 'R$ 0,00' || gasVal === 'R$ 0' || gasVal === 'R$ ' || !alcoolVal || alcoolVal === 'R$ 0,00' || alcoolVal === 'R$ 0'  || alcoolVal === 'R$ ' ) {
+        document.getElementById("calc-btn").disabled = true;
+    }
+    else {
+        document.getElementById("calc-btn").disabled = false;
+    }
+   
 }
 
 /* funcao central de carregar o resultado do combustivel */
@@ -12,8 +24,10 @@ function fetchResult() {
     document.getElementById('page-result').classList.remove('hidden');
 
     if(gasWorthMore()) {
+        document.getElementById('alcool-result').classList.add('hidden');
         document.getElementById('gas-result').classList.remove('hidden');
     } else {
+        document.getElementById('gas-result').classList.add('hidden');
         document.getElementById('alcool-result').classList.remove('hidden');
     }
 }
@@ -28,6 +42,7 @@ function gasWorthMore() {
 
 /* converte number para reais em string */
 function numberToReal(name) {
+    listenerChangingInput()
     let element = document.getElementById(name);
 
     let val = element.value

@@ -56,6 +56,8 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/tabnavigation.css" />
     <link rel="stylesheet" href="./css/gas.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/history.css" />
 
     <!-- Scrips -->
     <script src="./js/base.js"></script>
@@ -74,6 +76,7 @@
             placeholder="R$ 0,00"
             maxlength="8"
             onkeyup="numberToReal('gas')"
+            onchange="listenerChangingInput()"
           />
         </div>
         <div class="customInput">
@@ -83,11 +86,13 @@
             placeholder="R$ 0,00"
             maxlength="8"
             onkeyup="numberToReal('alcool')"
+            onchange="listenerChangingInput()"
           />
         </div>
       </div>
       <div class="container-center pd6">
         <button
+          id="calc-btn"
           type="button"
           class="button w-60 center"
           onclick="fetchResult()"
@@ -133,12 +138,152 @@
 
     <!-- Dashboard page -->
     <section id="page-dashboard" class="component hidden">
-      <h1>Pagina de Dashboard</h1>
+      <img src="./assets/dashboard.png" class="dashboard" />
+
+      <div class="hold-form mt1">
+        <span class="subtitle">Dashboard</span>
+      </div>
+
+      <div class="card">
+        <span class="subtitle black-primary mt2 mb1">Semanal</span>
+        <div id="semanal" class="chip w-80">
+          <span class="semititle primary-color"> R$ 20,12</span>
+        </div>
+        <span class="subtitle black-primary mt2 mb1">Mensal</span>
+        <div id="mensal" class="chip w-80">
+          <span class="semititle primary-color"> R$ 20,12</span>
+        </div>
+        <span class="subtitle black-primary mt2 mb1">Anual</span>
+        <div id="anual" class="chip w-80">
+          <span class="semititle primary-color"> R$ 20,12</span>
+        </div>
+      </div>
     </section>
 
     <!-- History page -->
     <section id="page-history" class="component hidden">
-      <h1>Pagina de History</h1>
+      <img src="./assets/data.png" class="dashboard" />
+
+      <div class="hold-form mt1">
+        <span class="subtitle">Histórico</span>
+      </div>
+
+      <div class="card">
+        <div class="pd3">
+          <span class="subtitle black-primary">Gasto Total</span>
+        </div>
+        <div class="pd1">
+          <span class="subtitle primary-color">R$ 76.232,32</span>
+        </div>
+        <hr />
+        <div class="list">
+          <div>
+            <span class="gas-text"> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span class="alcool-text"> Álcool </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+          <div>
+            <span> Gasolina </span>
+            <span> R$ 20,20</span>
+            <hr />
+          </div>
+        </div>
+      </div>
     </section>
   </body>
   <footer>

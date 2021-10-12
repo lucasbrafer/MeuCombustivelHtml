@@ -27,11 +27,11 @@ function retriveHistory() {
       }
     });
   
-    document.getElementById("total-spent").innerHTML = converToBrl(totalSpent);
+    document.getElementById("total-spent").innerHTML = converToBrl(totalSpent) || JSON.parse(localStorage.getItem('totalSpent'));
     document.getElementById("list-history").innerHTML = htmlHistory;
   }
 
-/* confirma abastecimento e valor */
+/* confirma o valor abastecido e armazena as variaveis */
 function saveValue(){
     const element = document.getElementById('spent')
     let spentVal = element?.value
@@ -54,6 +54,9 @@ function saveValue(){
     else {
         localStorage.setItem('fuel', JSON.stringify([fuelItem]));
     }
+
+    const totalValue = JSON.parse(localStorage.getItem('totalSpent'));
+    localStorage.setItem('totalSpent', JSON.stringify(totalValue + real));
 
     element.value = 'R$ 0,00'
     setPageValues()

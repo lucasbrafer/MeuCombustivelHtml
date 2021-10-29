@@ -14,5 +14,5 @@ a tela que irá mostrar o valor total gasto de combustível e também todo o his
 A partir dos abastecimentos registrados é exibido a quantidade total gasta na semana, mês e ano
 
 ## 2. Tecnologias 💻
-A aplicação foi construída para ser umas PWA móvel utilizando apenas html, css e javascript  
+A aplicação foi construída para ser uma PWA móvel utilizando apenas html, css e javascript  
 
